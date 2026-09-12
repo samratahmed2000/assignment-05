@@ -8,7 +8,7 @@ import type { TechnologyType } from "./types/Type";
 import Technologies from "./components/Technologies";
 
 const TechnologiesPromise = async (): Promise<TechnologyType[]> => {
-  const res = await fetch("/public/data.json");
+  const res = await fetch("/data.json");
   const data = await res.json();
   return data;
 };
@@ -17,7 +17,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Navbar></Navbar>
     <Banner></Banner>
-    <Suspense>
+    <Suspense fallback={<h2 className="text-center text-[18px]">Loading Technologies</h2>}>
       <Technologies TechnologiesPromise={TechnologiesPromise()}></Technologies>
     </Suspense>
     <ToastContainer></ToastContainer>

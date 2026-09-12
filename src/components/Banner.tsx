@@ -2,7 +2,7 @@ import BannerImage from "../assets/banner-image.png";
 
 const Banner = () => {
   return (
-    <header className="flex flex-col my-8 md:flex-row justify-around items-center min-h-[90vh] container mx-auto">
+    <header className="flex flex-col my-8 md:flex-row justify-between items-center min-h-[90vh] container mx-auto">
       <div className="text-center md:text-left">
         <h1 className="text-[60px] font-inter font-extrabold leading-15">
           Build Your Ideal <br />
