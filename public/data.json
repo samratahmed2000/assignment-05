@@ -7,7 +7,7 @@
     "icon": "./assets/javascript.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
+    "badge": "Required"
   },
   {
     "id": "typescript",
@@ -17,7 +17,7 @@
     "icon": "./assets/typescript.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "Popular"
+    "badge": "Trending"
   },
   {
     "id": "css",
@@ -46,7 +46,7 @@
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
     "icon": "./assets/react.svg",
     "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
+    "difficulty": "Intermediate",
     "badge": "Popular"
   },
   {
@@ -56,7 +56,7 @@
     "description": "A React framework for building fast, scalable, and production-ready web applications.",
     "icon": "./assets/nextjs.svg",
     "rating": 4.8,
-    "difficulty": "Intermediate",
+    "difficulty": "Advanced",
     "badge": "Trending"
   },
   {
@@ -66,8 +66,8 @@
     "description": "A JavaScript runtime that enables developers to build fast and scalable server-side applications.",
     "icon": "./assets/nodejs.svg",
     "rating": 4.9,
-    "difficulty": "Intermediate",
-    "badge": "Popular"
+    "difficulty": "Advanced",
+    "badge": "Required"
   },
   {
     "id": "expressjs",
@@ -76,8 +76,8 @@
     "description": "A minimal and flexible Node.js web framework for building APIs and server-side applications.",
     "icon": "./assets/express.svg",
     "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Essential"
+    "difficulty": "Advanced",
+    "badge": "Popular"
   },
   {
     "id": "mongodb",
@@ -87,7 +87,7 @@
     "icon": "./assets/mongodb.svg",
     "rating": 4.8,
     "difficulty": "Intermediate",
-    "badge": "NoSQL"
+    "badge": "Standard"
   },
   {
     "id": "mongoose",
@@ -96,8 +96,8 @@
     "description": "An elegant MongoDB object modeling library for Node.js that provides schemas, validation, and data management.",
     "icon": "./assets/mongoose.svg",
     "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "MongoDB ODM"
+    "difficulty": "Advanced",
+    "badge": "Trending"
   },
   {
     "id": "docker",
@@ -106,8 +106,8 @@
     "description": "A platform for packaging applications and their dependencies into portable containers.",
     "icon": "./assets/docker.svg",
     "rating": 4.8,
-    "difficulty": "Intermediate",
-    "badge": "Essential"
+    "difficulty": "Advanced",
+    "badge": "Standard"
   },
   {
     "id": "kubernetes",
@@ -117,7 +117,7 @@
     "icon": "./assets/kubernetes.svg",
     "rating": 4.7,
     "difficulty": "Advanced",
-    "badge": "Cloud Native"
+    "badge": "Standard"
   },
   {
     "id": "vscode",
@@ -127,7 +127,7 @@
     "icon": "./assets/vscode.svg",
     "rating": 4.9,
     "difficulty": "Beginner-Friendly",
-    "badge": "Developer Favorite"
+    "badge": "Essential"
   },
   {
     "id": "git",

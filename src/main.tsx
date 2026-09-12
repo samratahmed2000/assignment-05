@@ -17,7 +17,11 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Navbar></Navbar>
     <Banner></Banner>
-    <Suspense fallback={<h2 className="text-center text-[18px]">Loading Technologies</h2>}>
+    <Suspense
+      fallback={
+        <h2 className="text-center text-[18px]">Loading Technologies</h2>
+      }
+    >
       <Technologies TechnologiesPromise={TechnologiesPromise()}></Technologies>
     </Suspense>
     <ToastContainer></ToastContainer>

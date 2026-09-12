@@ -1,3 +1,4 @@
+import { FaStar } from "react-icons/fa6";
 import type { TechnologyType } from "../types/Type";
 
 export interface TechnologyProps {
@@ -5,20 +6,41 @@ export interface TechnologyProps {
 }
 
 const Technology = ({ technology }: TechnologyProps) => {
+  const badgeColor = {
+    Essential: "badge-info",
+    Popular: "badge-primary",
+    Trending: "badge-secondary",
+    Standard: "badge-success",
+    Required: "badge-warning",
+  }[technology.badge];
+
   return (
     <div className="p-4 border border-gray-200 rounded-2xl min-h-75 min-w-70 grid gap-2">
       <div className="flex justify-between ">
-        <img className="w-7 h-7" src={technology.icon} alt={technology.name} />
-        <p className="text-[12px]">{technology.badge}</p>
+        <img
+          className="w-10 h-10"
+          src={technology.icon}
+          alt={technology.name}
+        />
+
+        <p
+          className={`badge badge-soft text-[12px] font-semibold ${badgeColor}`}
+        >
+          {technology.badge}
+        </p>
       </div>
 
       <h3 className="text-[18px]">{technology.name}</h3>
       <p className="text-[12px] text-[#64748B]">{technology.description}</p>
 
-      <div className="flex justify-between">
-        <p className="text-[12px] text-[#64748B] p-1">{technology.category}</p>
+      <div className="flex justify-between items-center">
+        <button className="text-[12px] text-[#64748B] bg-[#F1F5F9] rounded p-1">
+          {technology.category}
+        </button>
         <p className="text-[11px] text-[#64748B]">{technology.difficulty}</p>
-        <p className="text-[12px] text-[#64748B]">{technology.rating}</p>
+        <p className="flex items-center gap-1 text-[12px] text-[#64748B]">
+          <FaStar className="text-yellow-400" /> {technology.rating}
+        </p>
       </div>
 
       <button className="text-[12px] text-white bg-[#0A0F1D] rounded-[10px]">
