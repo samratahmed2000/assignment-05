@@ -2,7 +2,7 @@ import BannerImage from "../assets/banner-image.png";
 
 const Banner = () => {
   return (
-    <header className="flex flex-col my-8 md:flex-row justify-between items-center min-h-[90vh] container mx-auto">
+    <header className="flex flex-col my-8 lg:flex-row justify-between items-center min-h-[90vh] container mx-auto">
       <div className="text-center md:text-left">
         <h1 className="text-[60px] font-inter font-extrabold leading-15">
           Build Your Ideal <br />
@@ -17,17 +17,19 @@ const Banner = () => {
           <br /> next project.
         </p>
 
-        <button className="text-[14px] text-white font-semibold font-inter bg-linear-to-r from-[#F97316] to-[#EC4899] rounded-[10px] px-3 py-2 mr-4">
-          Explore Technologies
-        </button>
+        <div className="flex gap-2 justify-center items-center">
+          <button className="text-[14px] text-white font-semibold font-inter bg-linear-to-r from-[#F97316] to-[#EC4899] rounded-[10px] px-3 py-2 mr-4 cursor-pointer">
+            Explore Technologies
+          </button>
 
-        <button className="text-[14px] text-[#374151] font-normal font-inter border border-[#E5E7EB] rounded-[10px] px-12 py-2">
-          Learn More
-        </button>
+          <button className="text-[14px] text-[#374151] font-normal font-inter border border-[#E5E7EB] rounded-[10px] px-12 py-2 cursor-pointer">
+            Learn More
+          </button>
+        </div>
       </div>
 
       <div>
-        <img className="md:w-80 h-80" src={BannerImage} alt="Banner Image" />
+        <img className="w-80 h-80 mt-12" src={BannerImage} alt="Banner Image" />
       </div>
     </header>
   );

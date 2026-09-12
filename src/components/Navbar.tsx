@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="border-b sticky top-0 z-50 bg-white/70 backdrop-blur-md border-gray-200">
       <nav className="flex justify-between gap-4 py-4 container mx-auto">
-        <div className="text-2xl p-2 m-2 flex justify-center items-center md:hidden">
+        <div className="text-2xl p-2 m-2 flex justify-center items-center lg:hidden">
           <RxHamburgerMenu />
         </div>
 
@@ -17,7 +17,7 @@ const Navbar = () => {
           </p>
         </div>
 
-        <ul className="hidden md:flex gap-4 items-center nav-text text-[#475569]">
+        <ul className="hidden lg:flex gap-4 items-center nav-text text-[#475569]">
           <li>
             <a href="#" className="text-[#DB2777]">
               Home
@@ -38,8 +38,8 @@ const Navbar = () => {
         </ul>
 
         <div className="flex gap-4 items-center">
-          <button>Sign In</button>
-          <button className="bg-[#D91B7E] px-5 py-2 text-white rounded-full">
+          <button className="cursor-pointer">Sign In</button>
+          <button className="bg-[#D91B7E] px-5 py-2 text-white rounded-full cursor-pointer">
             Sign Up
           </button>
         </div>

@@ -1,11 +1,17 @@
 import { FaStar } from "react-icons/fa6";
-import type { TechnologyType } from "../types/Type";
+import type { TechnologyType } from "../../types/Type";
 
 export interface TechnologyProps {
   technology: TechnologyType;
+  onAddToStack: (technology: TechnologyType) => void;
+  isSelected: boolean;
 }
 
-const Technology = ({ technology }: TechnologyProps) => {
+const Technology = ({
+  technology,
+  onAddToStack,
+  isSelected,
+}: TechnologyProps) => {
   const badgeColor = {
     Essential: "badge-info",
     Popular: "badge-primary",
@@ -15,7 +21,7 @@ const Technology = ({ technology }: TechnologyProps) => {
   }[technology.badge];
 
   return (
-    <div className="p-4 border border-gray-200 rounded-2xl min-h-75 min-w-70 grid gap-2">
+    <div className="p-4 border border-gray-200 rounded-2xl h-75 w-75 grid gap-2">
       <div className="flex justify-between ">
         <img
           className="w-10 h-10"
@@ -43,8 +49,12 @@ const Technology = ({ technology }: TechnologyProps) => {
         </p>
       </div>
 
-      <button className="text-[12px] text-white bg-[#0A0F1D] rounded-[10px]">
-        Add to Stack
+      <button
+        onClick={() => onAddToStack(technology)}
+        className={`text-[12px] text-white bg-[#0A0F1D] rounded-[10px] cursor-pointer disabled:bg-gray-200 disabled:cursor-not-allowed`}
+        disabled={isSelected}
+      >
+        {isSelected === true ? "Selected" : "Add to Stack"}
       </button>
     </div>
   );

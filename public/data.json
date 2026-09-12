@@ -25,7 +25,7 @@
     "category": "Styling",
     "description": "A stylesheet language used to design, layout, and visually enhance web pages.",
     "icon": "./assets/css.svg",
-    "rating": 4.8,
+    "rating": 4.2,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
   },
@@ -35,7 +35,7 @@
     "category": "Styling",
     "description": "A utility-first CSS framework for rapidly building modern and responsive user interfaces.",
     "icon": "./assets/tailwindcss.svg",
-    "rating": 4.8,
+    "rating": 4.5,
     "difficulty": "Beginner-Friendly",
     "badge": "Trending"
   },
@@ -45,7 +45,7 @@
     "category": "Frontend",
     "description": "A declarative, component-based JavaScript library for building modern user interfaces.",
     "icon": "./assets/react.svg",
-    "rating": 4.9,
+    "rating": 4.7,
     "difficulty": "Intermediate",
     "badge": "Popular"
   },
@@ -65,7 +65,7 @@
     "category": "Backend",
     "description": "A JavaScript runtime that enables developers to build fast and scalable server-side applications.",
     "icon": "./assets/nodejs.svg",
-    "rating": 4.9,
+    "rating": 4.6,
     "difficulty": "Advanced",
     "badge": "Required"
   },
@@ -75,7 +75,7 @@
     "category": "Backend",
     "description": "A minimal and flexible Node.js web framework for building APIs and server-side applications.",
     "icon": "./assets/express.svg",
-    "rating": 4.8,
+    "rating": 4.9,
     "difficulty": "Advanced",
     "badge": "Popular"
   },
@@ -85,7 +85,7 @@
     "category": "Database",
     "description": "A flexible NoSQL database designed for modern applications and scalable data storage.",
     "icon": "./assets/mongodb.svg",
-    "rating": 4.8,
+    "rating": 4.5,
     "difficulty": "Intermediate",
     "badge": "Standard"
   },
@@ -105,7 +105,7 @@
     "category": "DevOps",
     "description": "A platform for packaging applications and their dependencies into portable containers.",
     "icon": "./assets/docker.svg",
-    "rating": 4.8,
+    "rating": 4.4,
     "difficulty": "Advanced",
     "badge": "Standard"
   },
@@ -125,7 +125,7 @@
     "category": "Tools",
     "description": "A lightweight and powerful source-code editor with extensive development features and extensions.",
     "icon": "./assets/vscode.svg",
-    "rating": 4.9,
+    "rating": 4.0,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
   },
@@ -135,7 +135,7 @@
     "category": "Tools",
     "description": "Version control and collaboration tools for tracking code changes and managing software projects.",
     "icon": "./assets/git.svg",
-    "rating": 4.9,
+    "rating": 4.2,
     "difficulty": "Beginner-Friendly",
     "badge": "Essential"
   },
@@ -145,7 +145,7 @@
     "category": "Deploy",
     "description": "A cloud platform for deploying and hosting fast, scalable, and modern web applications.",
     "icon": "./assets/vercel.svg",
-    "rating": 4.9,
+    "rating": 4.6,
     "difficulty": "Beginner-Friendly",
     "badge": "Popular"
   }
