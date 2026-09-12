@@ -37,7 +37,9 @@ const Technology = ({
       </div>
 
       <h3 className="text-[18px]">{technology.name}</h3>
-      <p className="text-[12px] text-[#64748B]">{technology.description}</p>
+      <p className="text-[12px] text-[#64748B] border-b border-gray-200">
+        {technology.description}
+      </p>
 
       <div className="flex justify-between items-center">
         <button className="text-[12px] text-[#64748B] bg-[#F1F5F9] rounded p-1">

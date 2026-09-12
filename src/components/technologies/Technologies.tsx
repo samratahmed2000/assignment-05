@@ -34,7 +34,7 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesProps) => {
   };
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 mb-20">
       <h2 className="text-[36px] font-extrabold text-center lg:text-left">
         Explore the
         <span className=" bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">

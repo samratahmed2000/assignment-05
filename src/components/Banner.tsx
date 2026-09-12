@@ -17,7 +17,7 @@ const Banner = () => {
           <br /> next project.
         </p>
 
-        <div className="flex gap-2 justify-center items-center">
+        <div className="flex gap-2">
           <button className="text-[14px] text-white font-semibold font-inter bg-linear-to-r from-[#F97316] to-[#EC4899] rounded-[10px] px-3 py-2 mr-4 cursor-pointer">
             Explore Technologies
           </button>
