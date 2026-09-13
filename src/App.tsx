@@ -19,7 +19,9 @@ const App = () => {
       <Banner></Banner>
       <Suspense
         fallback={
-          <h2 className="text-center text-[18px]">Loading Technologies</h2>
+          <h2 className="text-center font-bold text-[18px] m-8 brand-gradient bg-clip-text text-transparent">
+            Loading Technologies...
+          </h2>
         }
       >
         <Technologies

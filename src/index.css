@@ -7,3 +7,9 @@
   --font-sans: "Plus Jakarta Sans", sans-serif;
   --font-inter: "Inter", sans-serif;
 }
+
+@layer utilities {
+  .brand-gradient {
+    @apply bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED];
+  }
+}

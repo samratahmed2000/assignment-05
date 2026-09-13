@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="text-center md:text-left">
         <h1 className="text-[60px] font-inter font-extrabold leading-15">
           Build Your Ideal <br />
-          <span className="bg-linear-to-r from-[#FF5722] via-[#D81B7E] to-[#7C3AED] bg-clip-text text-transparent">
+          <span className="brand-gradient bg-clip-text text-transparent">
             Development Stack
           </span>
         </h1>
@@ -18,7 +18,7 @@ const Banner = () => {
         </p>
 
         <div className="flex gap-2">
-          <button className="text-[14px] text-white font-semibold font-inter bg-linear-to-r from-[#F97316] to-[#EC4899] rounded-[10px] px-3 py-2 mr-4 cursor-pointer">
+          <button className="text-[14px] text-white font-semibold font-inter brand-gradient rounded-[10px] px-3 py-2 mr-4 cursor-pointer">
             Explore Technologies
           </button>
 

@@ -13,7 +13,7 @@ const Technology = ({
   isSelected,
 }: TechnologyProps) => {
   return (
-    <div className="p-4 border border-gray-200 rounded-2xl h-75 w-75 grid gap-2">
+    <div className="p-4 border border-gray-200 rounded-2xl grid gap-2 w-full lg:w-75 lg:h-75">
       <div className="flex justify-between ">
         <img
           className="w-10 h-10"
@@ -39,7 +39,7 @@ const Technology = ({
       </div>
 
       <h3 className="text-[18px]">{technology.name}</h3>
-      <p className="text-[12px] text-[#64748B] border-b border-gray-200">
+      <p className="text-[12px] text-[#64748B] py-4 border-b border-gray-200">
         {technology.description}
       </p>
 
@@ -55,10 +55,9 @@ const Technology = ({
 
       <button
         onClick={() => onAddToStack(technology)}
-        className={`text-[12px] text-white bg-[#0A0F1D] rounded-[10px] cursor-pointer disabled:bg-gray-200 disabled:cursor-not-allowed`}
-        disabled={isSelected}
+        className={`text-[12px] text-white bg-[#0A0F1D] rounded-[10px] cursor-pointer p-1.5`}
       >
-        {isSelected === true ? "Selected" : "Add to Stack"}
+        {isSelected === true ? "Added to Stack" : "Add to Stack"}
       </button>
     </div>
   );

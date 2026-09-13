@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 justify-items-center">
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2">
-              <span className="rounded bg-linear-to-tr from-[#EC4899] to-[#7C3AED] px-1.5 py-1 text-[12px] font-medium text-white">
+              <span className="rounded brand-gradient px-1.5 py-1 text-[12px] font-medium text-white">
                 DS
               </span>
 

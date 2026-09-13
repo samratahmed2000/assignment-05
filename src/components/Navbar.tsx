@@ -9,7 +9,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-2 items-center">
-          <p className="bg-linear-to-tr from-[#EC4899] to-[#7C3AED] text-[14px] text-white px-1.5 py-1 rounded">
+          <p className="brand-gradient text-[14px] text-white px-1.5 py-1 rounded">
             DS
           </p>
           <p className="text-[20px] font-bold">

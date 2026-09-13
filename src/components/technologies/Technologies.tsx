@@ -14,6 +14,13 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesProps) => {
 
   // Add to Stack
   const handleAddToStack = (technology: TechnologyType) => {
+    const isAlreadyAdded = stack.some((item) => item.id === technology?.id);
+
+    if (isAlreadyAdded) {
+      toast.warning(`${technology?.name} Already in Stack!`);
+      return;
+    }
+
     setStack([...stack, technology]);
     toast.success(`${technology?.name} Added to Stack!`);
   };
@@ -37,7 +44,7 @@ const Technologies = ({ TechnologiesPromise }: TechnologiesProps) => {
     <div className="container mx-auto px-4 mb-20">
       <h2 className="text-[36px] font-extrabold text-center lg:text-left">
         Explore the
-        <span className=" bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">
+        <span className=" brand-gradient bg-clip-text text-transparent">
           Technologies
         </span>
       </h2>
