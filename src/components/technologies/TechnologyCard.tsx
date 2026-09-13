@@ -12,14 +12,6 @@ const Technology = ({
   onAddToStack,
   isSelected,
 }: TechnologyProps) => {
-  const badgeColor = {
-    Essential: "badge-info",
-    Popular: "badge-primary",
-    Trending: "badge-secondary",
-    Standard: "badge-success",
-    Required: "badge-warning",
-  }[technology.badge];
-
   return (
     <div className="p-4 border border-gray-200 rounded-2xl h-75 w-75 grid gap-2">
       <div className="flex justify-between ">
@@ -30,7 +22,17 @@ const Technology = ({
         />
 
         <p
-          className={`badge badge-soft text-[12px] font-semibold ${badgeColor}`}
+          className={`badge badge-soft ${
+            technology.badge === "Essential"
+              ? "badge-info"
+              : technology.badge === "Popular"
+                ? "badge-primary"
+                : technology.badge === "Trending"
+                  ? "badge-secondary"
+                  : technology.badge === "Standard"
+                    ? "badge-success"
+                    : "badge-warning"
+          }`}
         >
           {technology.badge}
         </p>
